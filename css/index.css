@@ -54,19 +54,22 @@ a,a:hover,a:visited,a:active,a:link,button{
 /*手机浏览时顶部导航样式*/
 @media (max-width: 767px) {
     .container .navbar-header .logo {
-        margin-left: 10px;
+        margin-left: 15px!important;
     }
     .collapse {
         position: relative;
     }
+    .nav {
+        float: left;
+        margin: 5px 0;
+    }
     .nav li {
     display: inline-block;
-    margin-left: 15px!important;
+    margin: 0 15px 0 0!important;
+
     }
     .login {
-        position: absolute;
-        top: 2px;
-        right: 15px;
+        float: right;
     }
 }
 
@@ -95,6 +98,7 @@ a,a:hover,a:visited,a:active,a:link,button{
 }
 .login .un-login {
     margin-top: 15px;
+    height: 20px;
     font-size: 0;     /*解决inline-block 4px问题*/
 }
 .login .un-login a {
